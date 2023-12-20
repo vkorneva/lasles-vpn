@@ -40,6 +40,26 @@
     margin-right : 35px;
 }
 
+.achievement__icon rect {
+    fill : #FFECEC;
+}
+
+.achievement__icon path {
+    fill : #F53838;
+}
+
+.achievement__icon:hover rect,
+.achievement__icon:focus rect {
+    fill       : #F53838;
+    transition : fill 0.3s ease-in-out;
+}
+
+.achievement__icon:hover path,
+.achievement__icon:focus path {
+    fill       : #FFECEC;
+    transition : fill 0.3s ease-in-out;
+}
+
 .achievements__content {
     display        : flex;
     flex-direction : column;
