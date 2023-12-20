@@ -1,0 +1,10 @@
+.logo {
+    background-repeat   : no-repeat;
+    background-position : center;
+}
+
+.logo--lasles {
+    width            : 150px;
+    height           : 36px;
+    background-image : url("../assets/images/logos/logo-lasles.svg");
+}

@@ -1,0 +1,40 @@
+.header {
+    padding       : 50px 0;
+    margin-bottom : 40px;
+}
+
+.header__container {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+
+.header__auth {
+    display     : flex;
+    align-items : center;
+    gap         : 30px;
+}
+
+@media (max-width : 1024px) {
+    .header {
+        padding       : 15px 0;
+        margin-bottom : 15px;
+    }
+
+    .header__container {
+        flex-wrap : wrap;
+    }
+
+    .header__nav {
+        order       : 3;
+        width       : 100%;
+        padding-top : 20px;
+    }
+}
+
+
+@media (max-width : 480px) {
+    .header__nav {
+        overflow : auto;
+    }
+}
