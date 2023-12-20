@@ -1,0 +1,48 @@
+.button {
+    position         : relative;
+    background-color : transparent;
+    border           : none;
+    font-weight      : bold;
+    padding          : 0;
+    white-space      : nowrap;
+    cursor           : pointer;
+}
+
+.button--primary {
+    border-radius    : 10px;
+    border           : 1px solid #F53855;
+    color            : #fff;
+    background-color : #F53855;
+    padding          : 20px 80px;
+}
+
+.button--primary::before {
+    content          : "";
+    position         : absolute;
+    left             : 20px;
+    height           : 100%;
+    top              : 50%;
+    width            : calc(100% - 40px);
+    border-radius    : 10px;
+    background-color : rgba(245, 56, 56, 0.35);
+    filter           : blur(27px);
+    z-index          : -1;
+}
+
+.button--secondary {
+    border-radius : 50px;
+    border        : 1px solid #F53855;
+    color         : #F53855;
+    padding       : 15px 45px;
+}
+
+
+.button--primary:hover,
+.button--primary:focus,
+.button--secondary:hover,
+.button--secondary:focus {
+    color            : #fff;
+    background-color : rgba(245, 56, 85, 0.7);
+    border-color     : rgba(245, 56, 85, 0.7);
+    transition       : background 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
